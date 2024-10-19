@@ -1,0 +1,98 @@
+.herobannermain {
+  padding: 0 30px 400px 30px;
+  position: relative;
+
+  .algoherobannerbackground {
+    background-image: url("../../../assets/algopageimages/image/algoherobanner.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 34px;
+    padding: 0 0 400px 0;
+
+    // img {
+    //   width: 100%;
+    //   height: 100%;
+    //   border-radius: 34px;
+    // }
+  }
+
+  .algoherobannerprimage {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+  }
+
+  .herobannercontentmain {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0 0 0;
+
+    .algoherobannercontainer {
+      max-width: 1318px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .algoherobannerbuttontop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0 4px 0;
+
+      button {
+        cursor: pointer;
+        border: 1px solid #b0b0ff;
+        background-color: #e6e6ffcc;
+        padding: 8px 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        outline: none;
+        border-radius: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20.58px;
+        text-align: left;
+        color: #0b0b14;
+        text-transform: uppercase;
+      }
+    }
+
+    .algoherobannermaincontent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h1 {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 76.81px;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: #0b0b14;
+        margin: 0 0 7px 0;
+        max-width: 1174px;
+      }
+
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: center;
+        color: #595959;
+      }
+    }
+  }
+}

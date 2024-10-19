@@ -1,0 +1,260 @@
+.forexcrmdevelopmentmain {
+    padding: 0 30px;
+    margin: 0 0 120px 0;
+
+    .Forexcrmdevelopmentdiv {
+        position: relative;
+        padding: 120px 0 128px 0;
+        background: #014EFF;
+        border-radius: 34px;
+        position: relative;
+        overflow: hidden;
+
+        .Checksimage {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .forexcrmdevelopmentbutton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            button {
+                cursor: pointer;
+                border: 1px solid #b0b0ff;
+                background-color: #B0C8FF33;
+                padding: 7px 17px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                outline: none;
+                border-radius: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20.58px;
+                text-align: left;
+                color: #fff;
+                text-transform: uppercase;
+                margin: 0 0 4px 0;
+            }
+
+            h1 {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 70px;
+                letter-spacing: -0.01em;
+                text-align: center;
+                color: #FFFFFF;
+                max-width: 1212px;
+                margin: 0 0 60px 0;
+            }
+        }
+
+        .forexcrmdeveloipmentflxmian {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            position: relative;
+            z-index: 5;
+
+            .forexcrmdevelopmentcards {
+                background: rgb(255 255 255 / 8%);
+                border-radius: 22px;
+                padding: 40px;
+
+                .bussinessicon {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 24px;
+                    margin: 0 0 30px 0;
+
+                    .bussinessicondiv {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 20px;
+                        border: 1px solid #B0C8FF;
+                        background: rgba(176, 200, 255, 1);
+                        border-radius: 50px;
+                    }
+
+                    p {
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        text-align: left;
+                        color: #FFFFFF;
+                    }
+                }
+
+                .bussinesscontent:last-child {
+                    margin: 0;
+                }
+
+                .bussinesscontent {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 15px;
+                    margin: 0 0 18px 0;
+
+                    span {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 29.4px;
+                        text-align: left;
+                        color: rgba(230, 230, 230, 1);
+                    }
+                }
+            }
+        }
+
+
+        .forexcrmcostsdiv {
+            margin: 115px 0 0 0;
+            position: relative;
+            z-index: 5;
+
+            .forexcrmcostbutton {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                button {
+                    cursor: pointer;
+                    border: 1px solid #b0b0ff;
+                    background-color: #B0C8FF33;
+                    padding: 7px 17px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                    outline: none;
+                    border-radius: 40px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20.58px;
+                    text-align: left;
+                    color: #fff;
+                    text-transform: uppercase;
+                    margin: 0 0 4px 0;
+                }
+
+                h2 {
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-size: 48px;
+                    font-weight: 600;
+                    line-height: 70px;
+                    letter-spacing: -0.01em;
+                    text-align: center;
+                    color: #FFFFFF;
+                    max-width: 1254px;
+                    margin: 0 0 60px 0;
+                }
+            }
+
+            .forexcrmcostgrdmain {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 47px;
+                padding: 0 39px 20px;
+                border-bottom: 1px solid rgba(176, 200, 255, 1);
+                margin: 0 0 120px 0;
+
+                .foremcrmcostgrcdiv:last-child {
+                    border-right: 0;
+                    padding: 0;
+                }
+
+                .foremcrmcostgrcdiv {
+                    border-right: 1px solid rgba(176, 200, 255, 1);
+                    padding: 0 47px 0 0;
+
+                    p {
+                        margin: 0 0 10px 0;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 30px;
+                        text-align: left;
+                        color: #FFFFFF;
+                    }
+
+                    span {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        text-align: left;
+                        color: #DBDBDD;
+                    }
+                }
+            }
+
+            .forexcrmteamdivmain {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h3 {
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-size: 48px;
+                    font-weight: 600;
+                    line-height: 64px;
+                    letter-spacing: -0.01em;
+                    text-align: left;
+                    color: #FFFFFF;
+                    max-width: 644px;
+                }
+
+                .forexcrmteamlastgrd {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 70px;
+
+                    p {
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        font-size: 48px;
+                        font-weight: 600;
+                        line-height: 64px;
+                        letter-spacing: -0.01em;
+                        text-align: left;
+                        color: #FFFFFF;
+                        margin: 0 0 10px 0;
+                    }
+
+                    span {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 24px;
+                        font-weight: 400;
+                        line-height: 35.28px;
+                        letter-spacing: -0.01em;
+                        text-align: left;
+                        color: #FFFFFF;
+                        display: block;
+                        max-width: 205px;
+                    }
+                }
+            }
+        }
+    }
+}

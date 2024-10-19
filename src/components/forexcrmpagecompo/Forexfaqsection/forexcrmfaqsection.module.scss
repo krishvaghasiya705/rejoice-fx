@@ -1,0 +1,88 @@
+.forexfaqsectionmain {
+    margin: 0 0 120px 0;
+
+    .forexfaqcontainer {
+        max-width: 1212px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+
+    .forexfaqtitle {
+        margin: 0 0 60px 0;
+
+        h1 {
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 70px;
+            letter-spacing: -0.01em;
+            text-align: center;
+            color: #0B0B14;
+        }
+    }
+
+    .forexfaqaccordionmain {
+        .forexfaqbox {
+            margin: 0 0 30px 0;
+
+            .forexfaqboxtoplinemain {
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                cursor: pointer;
+
+                h2 {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 24px;
+                    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    text-align: left;
+                    color: #0F0F1A;
+                }
+
+                .forexfaqdropiconmain {
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #BFBFBF;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    transition: transform 0.3s ease;
+
+                    &.open {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            .forexfaqboxdetailmain {
+                max-width: 1090px;
+                overflow: hidden;
+                transition: max-height 0.3s ease, opacity 0.3s ease;
+                max-height: 0;
+                opacity: 0;
+
+                &.open {
+                    max-height: 1000px; // Adjust this value as needed
+                    opacity: 1;
+                }
+
+                p {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    text-align: left;
+                    color: #737373;
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+}

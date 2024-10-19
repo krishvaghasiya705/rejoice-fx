@@ -1,0 +1,107 @@
+.forexcrmunmatch {
+    margin: 0 0 120px 0;
+
+    .forexcrmunmatchtitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 0 60px 0;
+
+        button {
+            cursor: pointer;
+            border: 1px solid #b0b0ff;
+            background-color: #e6e6ffcc;
+            padding: 7px 17px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            outline: none;
+            border-radius: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20.58px;
+            text-align: left;
+            color: #0b0b14;
+            text-transform: uppercase;
+            margin: 0 0 4px 0;
+        }
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 70px;
+            letter-spacing: -0.01em;
+            text-align: center;
+            color: #0B0B14;
+        }
+    }
+
+    .forexcrmunmatchmaingrd {
+        display: grid;
+        grid-template-columns: 600px 1fr;
+        gap: 60px;
+
+        .forexcrmunmatchfaq {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            align-items: start;
+            justify-content: start;
+
+            .faqdiv:first-child {
+                background: #E6E6FF99;
+                border: 1px solid #B0B0FF;
+
+                .faqtitle {
+                    img {
+                        rotate: 180deg;
+                    }
+                }
+            }
+
+            .faqdiv {
+                background: #E6EDFF;
+                border-radius: 18px;
+                padding: 19px 30px;
+                width: 100%;
+                box-sizing: border-box;
+
+                .faqtitle {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h3 {
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        font-size: 22px;
+                        font-weight: 500;
+                        line-height: 26.4px;
+                        text-align: left;
+                        color: #0F0F1A;
+                    }
+                }
+
+                p {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    text-align: left;
+                    color: #737373;
+                    margin: 12px 0 0 0;
+                }
+            }
+        }
+
+        .unmatchimagediv {
+
+            img {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.algoconnectsectionmain {
+  margin: 0 0 120px 0;
+  .algoconnectsectioncontainer {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .algoconnectsectiontopdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 60px 0;
+
+    .algoherobannerbuttontop {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin: 0 0 4px 0;
+      button {
+        cursor: pointer;
+        border: 1px solid #b0b0ff;
+        background-color: #e6e6ffcc;
+        padding: 8px 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        outline: none;
+        border-radius: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20.58px;
+        text-align: left;
+        color: #0b0b14;
+        text-transform: uppercase;
+      }
+    }
+
+    h5 {
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 70px;
+      letter-spacing: -0.01em;
+      text-align: center;
+      color: #0b0b14;
+      max-width: 868px;
+    }
+  }
+  .algoconnectmaincontent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 27px;
+
+    .algoconnectmaincontentbox {
+      border: 1px solid #b0c8ff;
+      background: #e6e6e633;
+      border-radius: 22px;
+      padding: 30px 30px 21px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      gap: 24px;
+
+      .algoconnectmaincontentboxcircle {
+        padding: 24px 23px 23px 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        border: 1px solid #b0c8ff;
+        background: #e6edff;
+        width: fit-content;
+      }
+
+      h6 {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 32px;
+        text-align: left;
+        color: #0f0f1a;
+        margin: 0 0 12px 0;
+      }
+
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        color: #737373;
+      }
+    }
+  }
+}

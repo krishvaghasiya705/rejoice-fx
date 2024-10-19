@@ -1,0 +1,131 @@
+.algoecosystemmain {
+  margin: 0 0 120px 0;
+
+  .algoecosystemcontainer {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .algoecosystemtopdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 50px 0;
+
+    .algoherobannerbuttontop {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin: 0 0 4px 0;
+      button {
+        cursor: pointer;
+        border: 1px solid #b0b0ff;
+        background-color: #e6e6ffcc;
+        padding: 8px 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        outline: none;
+        border-radius: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20.58px;
+        text-align: left;
+        color: #0b0b14;
+        text-transform: uppercase;
+      }
+    }
+
+    h5 {
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 70px;
+      letter-spacing: -0.01em;
+      text-align: center;
+      color: #0b0b14;
+    }
+  }
+
+  .algoecosystemmaincontent {
+    .algoecosystemlineimagemain {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .algoecosystemcontentdevide {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+
+      .algoecosystemcontentdevidepartone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+          font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 30px;
+          letter-spacing: -0.01em;
+          text-align: center;
+          color: #0f0f1a;
+          margin: 0 0 30px 0;
+        }
+
+        .algocontentlinedivmain {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 50px;
+
+          .algocontentline {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .algocontentlinediv {
+            width: 120px;
+            height: 100px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+
+            .linecontentcircle {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin: 0 0 12px 0;
+            }
+
+            span {
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 19.2px;
+              letter-spacing: -0.01em;
+              text-align: center;
+              color: #0F0F1A;
+            }
+          }
+        }
+      }
+    }
+  }
+}

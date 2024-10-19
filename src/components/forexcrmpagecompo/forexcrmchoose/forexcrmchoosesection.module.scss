@@ -1,0 +1,103 @@
+.forexcrmchoosemain {
+    margin: 0 0 120px 0;
+
+    .forexcrmchoosetitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 0 60px 0;
+
+        button {
+            cursor: pointer;
+            border: 1px solid #b0b0ff;
+            background-color: #e6e6ffcc;
+            padding: 7px 17px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            outline: none;
+            border-radius: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20.58px;
+            text-align: left;
+            color: #0b0b14;
+            text-transform: uppercase;
+            margin: 0 0 4px 0;
+        }
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 70px;
+            letter-spacing: -0.01em;
+            text-align: center;
+            color: #0B0B14;
+        }
+    }
+
+    .Forexcrmchoosegrd {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+
+        .Forexcrmchoosegrddiv:nth-child(3n + 2) {
+            margin: 80px 0 0 0;
+        }
+
+        .Forexcrmchoosegrddiv {
+            padding: 40px 52px 32px 40px;
+            background: #E6EDFF;
+            border-radius: 22px;
+            margin: 0 0 80px 0;
+
+            h3 {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 30px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 40px;
+                font-weight: 300;
+                line-height: 48.01px;
+                text-align: left;
+                color: #B0C8FF;
+                margin: 0 0 30px 0;
+
+                span {
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    text-align: left;
+                    color: #0F0F1A;
+                }
+            }
+
+            .cardcontent:last-child {
+                margin: 0;
+            }
+
+            .cardcontent {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 15px;
+                margin: 0 0 18px 0;
+
+                p {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 29.4px;
+                    text-align: left;
+                    color: #737373;
+                }
+            }
+        }
+    }
+}

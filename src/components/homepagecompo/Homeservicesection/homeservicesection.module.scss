@@ -1,0 +1,137 @@
+.homeservicessectionmain {
+    margin: 0 30px 120px 30px;
+    background-color: #F1F2F4;
+    border-radius: 34px;
+    padding: 120px 0;
+    position: relative;
+
+    .homeservicesscifiimagemain {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 1600px;
+        padding: 0 30px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .homeservicessectioncontentmain {
+        position: relative;
+        z-index: 9;
+
+        .homeservicessectioncontainer {
+            max-width: 1660px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        .homeservicessectioncontenttop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 60px;
+
+            h3 {
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 70px;
+                letter-spacing: -0.01em;
+                text-align: center;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin: 0 0 16px 0;
+            }
+
+            p {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 32px;
+                text-align: center;
+            }
+        }
+
+        .homeservicessectioncontentbottom {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+
+            .homeservicessectioncontentbottomcard {
+                border: 1px solid #B0C8FF;
+                background: #FFFFFF;
+                padding: 40px 30px 30px;
+                border-radius: 30px;
+                height: 100%;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .homeservicessectioncontentbottomcardtopcontent {
+
+                    button {
+                        background: #FFFFFF;
+                        border: 3px solid #E6EDFF;
+                        border-radius: 30px;
+                        padding: 4px 15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0 0 26px 0;
+
+                        span {
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 23.52px;
+                            color: #0F0F1A;
+                        }
+                    }
+
+                    .homeservicessectioncontentbottomcardtopcontenttitletexts {
+
+                        h4 {
+                            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+                            font-size: 26px;
+                            font-weight: 500;
+                            line-height: 31.21px;
+                            text-align: left;
+                            color: #0F0F1A;
+                            margin: 0 0 14px 0;
+                        }
+
+                        p {
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 32px;
+                            text-align: left;
+                            color: #737373;
+                            margin: 0 0 31px 0;
+                            max-width: 420px;
+                        }
+                    }
+                }
+
+                .homeservicessectioncontentbottomcardbottomcontent {
+                    background: #E6EDFF;
+                    border-radius: 20px;
+                    padding: 24px 0 0 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+
+                    img {
+                        height: 100%;
+                        max-height: 245px;
+                    }
+                }
+            }
+        }
+    }
+}
