@@ -19,7 +19,7 @@
             gap: 8px;
             outline: none;
             border-radius: 40px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "DM Sans", sans-serif;
             font-size: 14px;
             font-weight: 500;
             line-height: 20.58px;
@@ -30,7 +30,7 @@
         }
 
         h1 {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: "Poppins", sans-serif;
             font-size: 48px;
             font-weight: 600;
             line-height: 70px;
@@ -52,23 +52,19 @@
             align-items: start;
             justify-content: start;
 
-            .faqdiv:first-child {
-                background: #E6E6FF99;
-                border: 1px solid #B0B0FF;
-
-                .faqtitle {
-                    img {
-                        rotate: 180deg;
-                    }
-                }
-            }
-
             .faqdiv {
                 background: #E6EDFF;
                 border-radius: 18px;
                 padding: 19px 30px;
                 width: 100%;
                 box-sizing: border-box;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                &.active {
+                    background: #E6E6FF99;
+                    border: 1px solid #B0B0FF;
+                }
 
                 .faqtitle {
                     display: flex;
@@ -76,29 +72,47 @@
                     align-items: center;
 
                     h3 {
-                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        font-family: "Poppins", sans-serif;
                         font-size: 22px;
                         font-weight: 500;
                         line-height: 26.4px;
                         text-align: left;
                         color: #0F0F1A;
                     }
+
+                    img {
+                        transition: transform 0.3s ease;
+                    }
+                }
+
+                &.active .faqtitle img {
+                    transform: rotate(180deg);
+                }
+
+                .faqContent {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.3s ease-out;
+                }
+
+                &.active .faqContent {
+                    max-height: 300px; // Adjust this value based on your content
+                    transition: max-height 0.5s ease-in;
                 }
 
                 p {
-                    font-family: Arial, Helvetica, sans-serif;
+                    font-family: "DM Sans", sans-serif;
                     font-size: 20px;
                     font-weight: 400;
                     line-height: 30px;
                     text-align: left;
                     color: #737373;
-                    margin: 12px 0 0 0;
+                    margin: 12px 0;
                 }
             }
         }
 
         .unmatchimagediv {
-
             img {
                 display: block;
             }
