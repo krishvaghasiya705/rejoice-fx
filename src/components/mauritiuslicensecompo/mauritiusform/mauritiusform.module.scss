@@ -1,0 +1,86 @@
+.mauritiusformmain {
+    margin: 0 0 120px 0;
+
+    .mauritiusformflxmain {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 30px;
+
+        .mauritiusformflx1 {
+            max-width: 650px;
+
+
+            h1 {
+                font-family: "Poppins", sans-serif;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 70px;
+                letter-spacing: -0.01em;
+                text-align: left;
+                color: #0B0B14;
+                margin: 0 0 16px 0;
+            }
+
+            p {
+                font-family: "Roboto", sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 32px;
+                text-align: left;
+                color: #737373;
+            }
+        }
+
+        .mauritiusformflx2 {
+            padding: 40px 40px;
+            background-color: #F1F2F4;
+            border-radius: 34px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .mauritiusformflx2inner {
+                display: flex;
+                gap: 40px;
+                justify-content: space-between;
+
+                .mauritiusformflx2innerinputmain {
+                    width: 100%;
+
+                    label {
+                        display: block;
+                        font-family: "Poppins", sans-serif;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        letter-spacing: -0.01em;
+                        text-align: left;
+                        color: #0B0B14;
+                        margin: 0 0 14px 0;
+                    }
+
+                    input,
+                    select {
+                        border: 1px solid #CCCCCC;
+                        border-radius: 25px;
+                        color: #737373;
+                        padding: 14px 21px;
+                        background-color: transparent;
+                        width: 100%;
+                        font-family: "Roboto", sans-serif;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 23.52px;
+                        text-align: left;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,7 @@
+import Mauritiusadvantagesection from "@components/mauritiuslicensecompo/mauritiusadvantagesection";
+import Mauritiusform from "@components/mauritiuslicensecompo/mauritiusform";
 import Mauritiusherobanner from "@components/mauritiuslicensecompo/mauritiusherobanner";
+import Mauritiusmarqueeslider from "@components/mauritiuslicensecompo/mauritiusmarqueeslider";
 import Mauritiusminimumsection from "@components/mauritiuslicensecompo/mauritiusminimumsection";
 import Mauritiusproccesssection from "@components/mauritiuslicensecompo/mauritiusproccesssection";
 import Mauritiusstartsection from "@components/mauritiuslicensecompo/mauritiusstartsection";
@@ -26,7 +29,16 @@ export default function Mauritiuslicense() {
         cardcontentspan5="Time Frame"
         cardcontentp5="3 – 4 Weeks"
       />
-      <Mauritiusminimumsection />
+      <Mauritiusminimumsection
+        title="MUR 700,000"
+        note="The company must be registered in Mauritius and have a
+                  registered office in Mauritius. Starting forex business in
+                  Mauritius is low cost, as there are strict confidentiality laws
+                  and flexible incorporation regulations."
+      />
+      <Mauritiusadvantagesection />
+      <Mauritiusmarqueeslider />
+      <Mauritiusform />
     </>
   );
 }

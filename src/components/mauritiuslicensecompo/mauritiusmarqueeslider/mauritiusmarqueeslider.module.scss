@@ -1,0 +1,52 @@
+.mauritiusmarqueeslidermain {
+    margin: 0 30px 120px 30px;
+    background: #F1F2F4;
+    border-radius: 34px;
+    padding: 100px 0;
+    overflow: hidden;
+
+    .mauritiusmarqueeslidertitle {
+        margin: 0 0 70px 0;
+
+        h1 {
+            font-family: "Poppins", sans-serif;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 70px;
+            letter-spacing: -0.01em;
+            text-align: center;
+            color: #0B0B14;
+        }
+    }
+
+    .Mauritiusmarqueeslidermain {
+        display: flex;
+        gap: 140px;
+        align-items: center;
+    }
+
+    .marqueeWrapper {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .marquee {
+        display: flex;
+        animation: marquee 20s linear infinite;
+
+        >* {
+            flex-shrink: 0;
+            margin-right: 140px;
+        }
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
