@@ -64,7 +64,7 @@ export default function Header() {
                       <div className={styles.dropdownbox}>
                         <h3>Strategies</h3>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                        <NavLink href={"/"}>See Solution <Rightarrow /></NavLink>
+                        <NavLink href={"/aidevelopment"}>See Solution <Rightarrow /></NavLink>
                       </div>
                     </div>
                   </div>
@@ -91,7 +91,7 @@ export default function Header() {
                       <div className={styles.dropdownbox}>
                         <h3>AI Web/ Mobile Development</h3>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                        <NavLink href={"/"}>See Solution <Rightarrow /></NavLink>
+                        <NavLink href={"/aiwebdevelopment"}>See Solution <Rightarrow /></NavLink>
                       </div>
                     </div>
                   </div>
@@ -132,7 +132,7 @@ export default function Header() {
             </div>
           </div>
           <div className={styles.contactbuttonmain}>
-            <NavLink href={"/"}><button>Contact Us <Rightarrow /></button></NavLink>
+            <NavLink href={"/contactus"}><button>Contact Us <Rightarrow /></button></NavLink>
           </div>
         </div>
       </div>

@@ -1,6 +1,22 @@
+import React, { useState } from 'react';
 import CommonButton from "@components/buttons";
 import styles from "./mauritiusform.module.scss";
+import Rightarrow from "assets/svg/rightarrow";
+import Dropdownicon from 'assets/svg/dropdownicon';
+
 export default function Mauritiusform() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [selectedCountry, setSelectedCountry] = useState('');
+
+  const countries = ['India', 'Nepal', 'Pakistan', 'China'];
+
+  const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
+
+  const selectCountry = (country) => {
+    setSelectedCountry(country);
+    setIsDropdownOpen(false);
+  };
+
   return (
     <div className={styles.mauritiusformmain}>
       <div className="container">
@@ -28,7 +44,7 @@ export default function Mauritiusform() {
               </div>
               <div className={styles.mauritiusformflx2innerinputmain}>
                 <label>Email Address</label>
-                <input type="Email" placeholder="Enter your email address" />
+                <input type="email" placeholder="Enter your email address" />
               </div>
             </div>
             <div className={styles.mauritiusformflx2inner}>
@@ -38,14 +54,34 @@ export default function Mauritiusform() {
               </div>
               <div className={styles.mauritiusformflx2innerinputmain}>
                 <label>Country</label>
-                <div>
-                  <select placeholder="Select country">
-                    <option>India</option>
-                    <option>Nepal</option>
-                    <option>Pakistan</option>
-                    <option>China</option>
-                  </select>
+                <div className={styles.customDropdown}>
+                  <div className={styles.dropdownHeader} onClick={toggleDropdown}>
+                    {selectedCountry || 'Select country'}
+                    <span className={`${styles.arrow} ${isDropdownOpen ? styles.up : styles.down}`}>
+                      <Dropdownicon />
+                    </span>
+                  </div>
+                  {isDropdownOpen && (
+                    <ul className={styles.dropdownList}>
+                      {countries.map((country) => (
+                        <li key={country} onClick={() => selectCountry(country)}>
+                          {country}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
+              </div>
+            </div>
+            <div className={styles.mauritiusformflx2inner}>
+              <div className={styles.mauritiusformflx2innerinputmain}>
+                <label>Message</label>
+                <textarea placeholder="Type your message here..."></textarea>
+              </div>
+            </div>
+            <div className={styles.mauritiusformflx2inner}>
+              <div className={styles.mauritiusformflx2innerinputmain}>
+                <button type="submit"><p>Submit Now</p><Rightarrow /></button>
               </div>
             </div>
           </div>

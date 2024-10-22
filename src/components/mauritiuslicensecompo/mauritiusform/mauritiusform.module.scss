@@ -62,7 +62,8 @@
                     }
 
                     input,
-                    select {
+                    select,
+                    textarea {
                         border: 1px solid #CCCCCC;
                         border-radius: 25px;
                         color: #737373;
@@ -74,9 +75,127 @@
                         font-weight: 400;
                         line-height: 23.52px;
                         text-align: left;
+                        appearance: none;
 
                         &:focus {
                             outline: none;
+                        }
+                    }
+
+                    textarea {
+                        resize: none;
+                        height: 122px;
+                    }
+
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                    }
+
+                    button {
+                        margin: 6px 0 0 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 6px;
+                        padding: 18px 28px;
+                        background-color: #014EFF;
+                        border-radius: 40px;
+                        border: 1px solid #014EFF;
+                        color: #fff;
+                        cursor: pointer;
+                        transition: .3s ease-in-out;
+
+                        p {
+                            font-family: "Poppins", sans-serif;
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 26.46px;
+                        }
+
+                        svg {
+                            transition: .3s ease-in-out;
+
+                            path {
+                                transition: .3s ease-in-out;
+                                fill: #fff;
+                            }
+                        }
+
+                        &:hover {
+                            transition: .3s ease-in-out;
+                            background-color: transparent;
+                            color: #014EFF;
+
+                            svg {
+                                transition: .3s ease-in-out;
+
+                                path {
+                                    transition: .3s ease-in-out;
+                                    fill: #014EFF;
+                                }
+                            }
+                        }
+                    }
+
+                    .customDropdown {
+                        position: relative;
+                        width: 100%;
+
+                        .dropdownHeader {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 14px 21px;
+                            background-color: transparent;
+                            border: 1px solid #CCCCCC;
+                            border-radius: 25px;
+                            cursor: pointer;
+                            font-family: "Roboto", sans-serif;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 23.52px;
+                            color: #737373;
+
+                            .arrow {
+                                transition: transform 0.3s ease;
+
+                                &.down {
+                                    transform: rotate(0deg);
+                                }
+
+                                &.up {
+                                    transform: rotate(-180deg);
+                                }
+                            }
+                        }
+
+                        .dropdownList {
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            right: 0;
+                            background-color: #fff;
+                            border: 1px solid #CCCCCC;
+                            border-radius: 25px;
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            z-index: 1;
+
+                            li {
+                                padding: 10px 21px;
+                                cursor: pointer;
+                                transition: background-color 0.3s ease;
+
+                                &:hover {
+                                    background-color: #F1F2F4;
+                                }
+
+                                &:last-child {
+                                    border-radius: 0 0 25px 25px;
+                                }
+                            }
                         }
                     }
                 }

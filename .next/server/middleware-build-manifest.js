@@ -12,11 +12,6 @@ self.__BUILD_MANIFEST = {
     "static/chunks/main-app.js"
   ],
   "pages": {
-    "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
-    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -27,10 +22,10 @@ self.__BUILD_MANIFEST = {
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/mauritiuslicense": [
+    "/aiwebdevelopment": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/mauritiuslicense.js"
+      "static/chunks/pages/aiwebdevelopment.js"
     ]
   },
   "ampFirstPages": []

@@ -1,0 +1,130 @@
+.aiworksectionmain {
+    margin: 0 30px 120px 30px;
+    background-color: #F1F2F4;
+    padding: 120px 0;
+    border-radius: 34px;
+    position: relative;
+
+    .aiworkscifiiamge {
+        position:absolute;
+        top: 0;
+        left: 0;
+        margin: 0 130px;
+    }
+
+    .aiworktitlemain {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 50px auto;
+        max-width: 962px;
+
+        h1 {
+            font-family: "Poppins", sans-serif;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 70px;
+            letter-spacing: -0.01em;
+            text-align: center;
+            color: #0B0B14;
+            margin: 0 0 16px 0;
+        }
+
+        p {
+            font-family: "Roboto", sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: center;
+            color: #737373;
+        }
+    }
+
+    .aiworkproccesstepdivmain {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+
+        .aiworkproccesstepdivline {
+            position: absolute;
+            top: 25px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #BFBFBF;
+        }
+
+        &::before,
+        &::after {
+            position: absolute;
+            top: 10px;
+            content: "";
+            width: 1px;
+            height: 30px;
+            background-color: #BFBFBF;
+        }
+
+        &::before {
+            left: 0;
+        }
+        &::after {
+            right: 0;
+        }
+
+        .aiworkproccesstepdiv {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+
+            .aiworkproccesstepdivcircle {
+                width: 50px;
+                height: 50px;
+                background: #014EFF;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0 20px 0;
+
+                span {
+                    font-family: "Poppins", sans-serif;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    letter-spacing: -0.01em;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+
+            h2 {
+                font-family: "Poppins", sans-serif;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 30px;
+                letter-spacing: -0.01em;
+                text-align: center;
+                color: #0F0F1A;
+                max-width:330px;
+                margin: 0 0 16px 0;
+            }
+
+            p {
+                font-family: "Roboto", sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 30px;
+                text-align: center;
+                color: #737373;
+                max-width:330px;
+            }
+        }
+    }
+}

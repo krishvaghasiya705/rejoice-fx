@@ -1,0 +1,95 @@
+.aidevelopmentsectionmain {
+    margin: 0 0 120px 0;
+
+    .aidevelopmentsectionflxmain {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+
+        .aidevelopmentimagemain {
+            width: 100%;
+
+            img {
+                max-width: 730px;
+                max-height: 540px;
+                width: 100%;
+                height: 100%;
+                border-radius: 24px;
+            }
+        }
+
+        .aidevelopmentcontentmain {
+            width: 100%;
+            max-width: 780px;
+
+            h1 {
+                font-family: "Poppins", sans-serif;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 70px;
+                letter-spacing: -0.01em;
+                text-align: left;
+                color: #0B0B14;
+            }
+
+            p {
+                font-family: "Roboto", sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 32px;
+                text-align: left;
+                color: #737373;
+                margin: 0 0 46px 0;
+            }
+
+            .getstartedbutton {
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 6px;
+                    border: 1px solid #014EFF;
+                    background-color: #014EFF;
+                    color: #fff;
+                    border-radius: 40px;
+                    padding: 18px 28px;
+                    cursor: pointer;
+                    transition: .3s ease-in-out;
+
+                    span {
+                        font-family: "Roboto", sans-serif;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 26.46px;
+                        text-align: left;
+                    }
+
+                    svg {
+                        transition: .3s ease-in-out;
+
+                        path {
+                            transition: .3s ease-in-out;
+                            fill: #fff;
+                        }
+                    }
+
+                    &:hover {
+                        transition: .3s ease-in-out;
+                        background-color: transparent;
+                        color: #014EFF;
+
+                        svg {
+                            transition: .3s ease-in-out;
+
+                            path {
+                                transition: .3s ease-in-out;
+                                fill: #014EFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

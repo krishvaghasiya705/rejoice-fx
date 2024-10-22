@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
         />
       </head>
       <Helmet>
-        <link rel="icon" href="/src/app/favicon.ico" />
+        <link rel="icon" href="src/app/favicon.ico" />
       </Helmet>
       <div className="layout">{children}</div>
     </>
