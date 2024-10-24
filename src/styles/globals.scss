@@ -39,9 +39,13 @@ a {
   padding: 0 20px;
 }
 
-main {
-  margin: 124px 0 0 0;
-}
+// main {
+//   margin: 124px 0 0 0;
+
+//   @media (max-width:1024px) {
+//     margin: 86px 0 0 0;
+//   }
+// }
 
 // .bodyOverflowHidden {
 //   overflow: hidden;

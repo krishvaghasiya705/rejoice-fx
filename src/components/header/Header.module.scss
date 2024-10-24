@@ -1,11 +1,23 @@
 .headermain {
-  position: fixed;
+  // position: fixed;
   top: 0;
   left: 0;
   padding: 33px 0 25px 0;
   background-color: #fff;
   z-index: 15;
   width: 100%;
+
+  @media (max-width:1024px) {
+    padding: 10px 0;
+  }
+
+  &.fixed {
+    position: sticky;
+  }
+
+  &.absolute {
+    position: static;
+  }
 
   .headermainalignment {
     display: flex;
@@ -36,9 +48,14 @@
       align-items: center;
       gap: 4px;
 
+      @media (max-width:1024px) {
+        display: none;
+      }
+
       .dropdownWrapper {
         position: relative;
       }
+
       .dropdownLink {
         img {
           width: 16px;
@@ -68,6 +85,7 @@
       .linkContainerfrst,
       .linkContainersc,
       .linkContainerth {
+
         .headerdropdownmainalignmentfrst,
         .headerdropdownmainalignmentsc,
         .headerdropdownmainalignmentth {
@@ -85,6 +103,7 @@
 
         &:hover,
         .active {
+
           .headerdropdownmainalignmentfrst,
           .headerdropdownmainalignmentsc,
           .headerdropdownmainalignmentth {
@@ -179,50 +198,67 @@
       }
     }
 
-    .contactbuttonmain {
-      button {
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 9px;
-        background-color: #014eff;
-        border: none;
-        text-decoration-line: none;
-        color: #fff;
-        font-family: "Roboto", sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        padding: 17px 26px;
-        border-radius: 30px;
-        box-sizing: border-box;
-        border: 2px solid transparent;
-        transition: 0.3s ease-in-out;
+    .headerlastcontent {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 10px;
 
-        svg {
+      .contactbuttonmain {
+        button {
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 9px;
+          background-color: #014eff;
+          border: none;
+          color: #fff;
+          font-family: "Roboto", sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          // padding: 18px 28px;
+          padding: 14px 28px;
+          border-radius: 30px;
+          border: 2px solid transparent;
           transition: 0.3s ease-in-out;
-
-          path {
-            transition: 0.3s ease-in-out;
-            fill: #fff;
-          }
-        }
-
-        &:hover {
-          transition: 0.3s ease-in-out;
-          border: 2px solid #014eff;
-          background-color: #fff;
-          color: #014eff;
 
           svg {
             transition: 0.3s ease-in-out;
 
             path {
               transition: 0.3s ease-in-out;
-              fill: #014eff;
+              fill: #fff;
             }
           }
+
+          &:hover {
+            transition: 0.3s ease-in-out;
+            border: 2px solid #014eff;
+            background-color: #fff;
+            color: #014eff;
+
+            svg {
+              transition: 0.3s ease-in-out;
+
+              path {
+                transition: 0.3s ease-in-out;
+                fill: #014eff;
+              }
+            }
+          }
+        }
+      }
+
+      .hemburgermain {
+        width: 48px;
+        height: 52px;
+        position: relative;
+        display: none;
+
+        @media (max-width:1024px) {
+          display: block;
         }
       }
     }
