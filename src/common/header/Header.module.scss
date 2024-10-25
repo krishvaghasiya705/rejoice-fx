@@ -66,9 +66,9 @@
         display: none;
       }
 
-      .dropdownWrapper {
-        position: relative;
-      }
+      // .dropdownWrapper {
+      //   position: relative;
+      // }
 
       .dropdownLink {
         img {
@@ -108,7 +108,8 @@
           height: 0;
           overflow: hidden;
           width: 100%;
-          position: fixed;
+          // position: fixed;
+          position: absolute;
           top: 70px;
           left: 0;
           padding: 0;
