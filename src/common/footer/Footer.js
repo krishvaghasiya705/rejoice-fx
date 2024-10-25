@@ -20,16 +20,16 @@ export default function Footer() {
         <div className="container">
           <div className={styles.footermainflx}>
             <div>
-              <Link href="/">
                 <div className={styles.footerlogo}>
-                  <Image
-                    src={Footerlogo}
-                    alt="Headericon"
-                    width={"100%"}
-                    height={"100%"}
-                  />
+                  <Link href="/">
+                      <Image
+                        src={Footerlogo}
+                        alt="Headericon"
+                        width={"100%"}
+                        height={"100%"}
+                      />
+                  </Link>
                 </div>
-              </Link>
               <div className={styles.footerfirstcontent}>
                 <div className={styles.footercontentflx}>
                   <div className={styles.footeremaildiv}>
