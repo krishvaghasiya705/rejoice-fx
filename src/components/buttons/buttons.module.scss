@@ -1,4 +1,4 @@
-.algoherobannerbuttontop {
+.CommonButtonmain {
     display: flex;
     // justify-content: center;
     align-items: center;
@@ -18,14 +18,28 @@
         font-family: "Roboto", sans-serif;
         font-size: 14px;
         font-weight: 500;
-        line-height: 20.58px;
+        line-height: 14px;
         text-align: left;
-        color: #0b0b14;
+        color: #0b0b14;     
         text-transform: uppercase;
 
+        @media (max-width:1024px) {
+            font-size: 10px;
+            padding: 6px 17px;
+        }
+
+        span {
+            margin: auto 0;
+        }
+
         img {
-            width: auto !important;
-            height: auto !important;
+            width: 28px !important;
+            height: 28px !important;
+
+            @media (max-width:1024px) {
+                width: 20px !important;
+                height: 20px !important;
+            }
         }
     }
 }

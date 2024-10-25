@@ -1,29 +1,71 @@
 .algotradsectionmain {
-    padding: 100px 0 120px 0;
-    .algotradsectioncontainer {
-      max-width: 1600px;
-      margin: 0 auto;
+  padding: 100px 0 120px 0;
+
+  @media (max-width:1024px) {
+    padding: 60px 0;
+  }
+
+  .algotradsectioncontainer {
+    max-width: 1660px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    @media (max-width:576px) {
       padding: 0 20px;
     }
-  
-    .algotradsectionflxmain {
-      display: flex;
-      justify-content: space-between;
-      align-items: start;
-      flex-direction: row-reverse;
-      gap: 120px;
-  
-      .algotradimagemain {
-        img {
-          width: 100%;
-          min-width: 640px;
-          border-radius: 30px;
-          object-fit: cover;
+  }
+
+  .algotradsectionflxmain {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    // flex-direction: row-reverse;
+    gap: 120px;
+
+    @media (max-width:1024px) {
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+
+    @media (max-width:576px) {
+      gap: 30px;
+    }
+
+    .algotradimagemain {
+      width: 100%;
+      height: 100%;
+      max-width: 640px;
+      max-height: 670px;
+
+      img {
+        max-width: 640px;
+        max-height: 670px;
+        width: 100%;
+        border-radius: 30px;
+        object-fit: cover;
+
+        @media (max-width:1024px) {
+          max-width: 100%;
+          max-height: 400px;
         }
       }
-  
+
+      @media (max-width:1024px) {
+        max-width: 100%;
+        max-height: 400px;
+      }
+    }
+
+    .algotradsectionflxcontentmain {
+      max-width: 840px;
+      width: 100%;
+
+      @media (max-width:1024px) {
+        max-width: 100%;
+      }
+
       h2 {
-        font-family: "Poppins", sans-serif ;
+        font-family: "Poppins", sans-serif;
         font-size: 48px;
         font-weight: 600;
         line-height: 70px;
@@ -31,8 +73,20 @@
         text-align: left;
         color: #0b0b14;
         margin: 0 0 16px 0;
+
+        @media (max-width:1024px) {
+          font-size: 38px;
+          line-height: 50px;
+          margin: 0 0 13px 0;
+        }
+
+        @media (max-width:576px) {
+          font-size: 30px;
+          line-height: 30px;
+          margin: 0 0 10px 0;
+        }
       }
-  
+
       p {
         font-family: "Roboto", sans-serif;
         font-size: 20px;
@@ -40,7 +94,17 @@
         line-height: 32px;
         text-align: left;
         color: #737373;
+
+        @media (max-width:1024px) {
+          font-size: 18px;
+          line-height: 28px;
+        }
+
+        @media (max-width:1024px) {
+          font-size: 14px;
+          line-height: 23px;
+        }
       }
     }
   }
-  
+}

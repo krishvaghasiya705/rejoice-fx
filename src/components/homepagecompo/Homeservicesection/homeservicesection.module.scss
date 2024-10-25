@@ -1,9 +1,18 @@
 .homeservicessectionmain {
-    margin: 0 30px 120px 30px;
+    margin: 0 30px 120px;
     background-color: #F1F2F4;
     border-radius: 34px;
     padding: 120px 0;
     position: relative;
+
+    @media (max-width:1024px) {
+        padding: 60px 0;
+        margin: 0 30px 60px;
+    }
+
+    @media (max-width:576px) {
+        margin: 0 20px 60px;
+    }
 
     .homeservicesscifiimagemain {
         position: absolute;
@@ -27,6 +36,10 @@
             max-width: 1660px;
             margin: 0 auto;
             padding: 0 30px;
+
+            @media (max-width:576px) {
+                padding: 0 20px;
+            }
         }
 
         .homeservicessectioncontenttop {
@@ -36,6 +49,10 @@
             flex-direction: column;
             margin-bottom: 60px;
 
+            @media (max-width:1024px) {
+                margin-bottom: 30px;
+            }
+
             h3 {
                 font-size: 48px;
                 font-weight: 600;
@@ -44,6 +61,17 @@
                 text-align: center;
                 font-family: "Poppins", sans-serif;
                 margin: 0 0 16px 0;
+
+                @media (max-width:1024px) {
+                    font-size: 38px;
+                    line-height: 50px;
+                    margin: 0 0 13px 0;
+                }
+                @media (max-width:576px) {
+                    font-size: 30px;
+                    line-height: 30px;
+                    margin: 0 0 10px 0;
+                }
             }
 
             p {
@@ -52,6 +80,15 @@
                 font-weight: 400;
                 line-height: 32px;
                 text-align: center;
+
+                @media (max-width:1024px) {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+                @media (max-width:576px) {
+                    font-size: 14px;
+                    line-height: 23px;
+                }
             }
         }
 
@@ -59,6 +96,16 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 50px;
+
+            @media (max-width:1024px) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+
+            @media (max-width:768px) {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+            }
 
             .homeservicessectioncontentbottomcard {
                 border: 1px solid #B0C8FF;
@@ -70,6 +117,10 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+
+                @media (max-width:1024px) {
+                    padding: 20px;
+                }
 
                 .homeservicessectioncontentbottomcardtopcontent {
 
@@ -83,12 +134,22 @@
                         align-items: center;
                         margin: 0 0 26px 0;
 
+                        @media (max-width:1024px) {
+                            padding: 2px 12px;
+                            margin: 0 0 20px 0;
+                        }
+
                         span {
                             font-family: "Roboto", sans-serif;
                             font-size: 16px;
                             font-weight: 500;
-                            line-height: 23.52px;
+                            line-height: 23px;
                             color: #0F0F1A;
+
+                            @media (max-width:1024px) {
+                                font-size: 13px;
+                                line-height: 18px;
+                            }
                         }
                     }
 
@@ -98,10 +159,16 @@
                             font-family: "Poppins", sans-serif;
                             font-size: 26px;
                             font-weight: 500;
-                            line-height: 31.21px;
+                            line-height: 31px;
                             text-align: left;
                             color: #0F0F1A;
                             margin: 0 0 14px 0;
+
+                            @media (max-width:1024px) {
+                                font-size: 20px;
+                                line-height: 28px;
+                                margin: 0 0 10px 0;
+                            }
                         }
 
                         p {
@@ -113,6 +180,12 @@
                             color: #737373;
                             margin: 0 0 31px 0;
                             max-width: 420px;
+
+                            @media (max-width:1024px) {
+                                font-size: 17px;
+                                line-height: 28px;
+                                margin: 0 0 20px 0;
+                            }
                         }
                     }
                 }
@@ -125,10 +198,30 @@
                     justify-content: center;
                     align-items: center;
                     overflow: hidden;
+                    height: 100%;
+                    width: 100%;
+                    // max-height: 270px;
+                    // height: 270px;
+                    max-width: 440px;
+                    max-height: 270px;
+
+                    @media (max-width:1024px) {
+                        max-width: 100%;
+                        max-height: 170px;
+                    }
 
                     img {
+                        border-radius: 20px;
                         height: 100%;
-                        max-height: 245px;
+                        width: 100%;
+                        object-fit: contain;
+                        max-width: 440px;
+                        max-height: 246px;
+
+                        @media (max-width:1024px) {
+                            max-width: 100%;
+                            max-height: 170px;
+                        }
                     }
                 }
             }

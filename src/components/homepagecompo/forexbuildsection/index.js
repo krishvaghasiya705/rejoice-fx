@@ -1,6 +1,6 @@
 import styles from "./forexbuildsection.module.scss";
 
-import Homeforexbuildimage from "assets/homeimages/homeforexbuildimage.png";
+import Homeforexbuildimage from "assets/homeimages/homeforexbuildimage.webp";
 import CommonButton from "@components/buttons";
 import Image from "next/image";
 
@@ -9,15 +9,7 @@ export default function Forexbuildsection() {
         <div className={styles.algotradsectionmain}>
             <div className={styles.algotradsectioncontainer}>
                 <div className={styles.algotradsectionflxmain}>
-                    <div className={styles.algotradimagemain}>
-                        <Image
-                            src={Homeforexbuildimage}
-                            alt="Homeforexbuildimage"
-                            width={"100%"}
-                            height={"100%"}
-                        />
-                    </div>
-                    <div>
+                    <div className={styles.algotradsectionflxcontentmain}>
                         <CommonButton text={"About Us"} justifyContent={"start"} />
                         <h2>Building Your Forex Business from the Ground Up</h2>
                         <p>
@@ -35,6 +27,12 @@ export default function Forexbuildsection() {
                             trader’s room setup, MT4 White Label, and CRM integration to help
                             your brokerage thrive in the competitive market.
                         </p>
+                    </div>
+                    <div className={styles.algotradimagemain}>
+                        <Image
+                            src={Homeforexbuildimage}
+                            alt="Homeforexbuildimage"
+                        />
                     </div>
                 </div>
             </div>
